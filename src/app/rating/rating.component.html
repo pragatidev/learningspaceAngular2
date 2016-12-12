@@ -1,0 +1,57 @@
+<div class="rating-page">
+   <div class="jumbotron">
+          <h1 class="text-xs-center" style="font-family:Crimson">Student Evaluation Report</h1>
+  </div>
+  <div class="container">
+    
+    <div class="row">
+     
+      <div class="col-md-6 offset-md-3 col-xs-12">
+        
+        <list-errors [errors]="errors"></list-errors>
+
+        <form class="form-control">
+
+           <div class="form-group col-xs-6 offset-md-3">
+            <select type="text" class="form-control">
+              <option value="" disabled selected hidden>Select Course</option>
+              <option [value]="course"  *ngFor="let course of Courses">{{course}}</option>
+            </select>
+          </div>
+          
+          <div class="form-group col-xs-6 offset-md-3">
+            <select type="text" class="form-control">
+              <option value="" disabled selected hidden>Select Student</option>
+              <option [value]="course"  *ngFor="let course of Courses">{{course}}</option>
+            </select>
+          </div>
+          <div class="form-group col-xs-6 offset-md-3">
+            
+             <select type="number" class="form-control">
+              <option value="" disabled selected hidden>Select Rating</option>
+              <option>1</option>
+               <option>2</option>
+                <option>3</option>
+                 <option>4</option>
+                  <option>5</option>
+            </select>
+          </div>
+          <div class="form-group col-xs-6 offset-md-3">            
+            <input type="email" class="form-control" id="exampleInputEmail2" placeholder="jane.doe@example.com">
+          </div>
+
+          <div class="card-block">
+                <textarea class="form-control"
+                  placeholder="Write a comment..."
+                  rows="3"
+                  [formControl]="commentControl"></textarea>
+          </div>
+         
+        </form>
+        <br />
+         <button type="submit" class="btn btn-primary pull-xs-right">Send Report</button>
+
+      </div>
+    </div>
+  </div>
+</div>

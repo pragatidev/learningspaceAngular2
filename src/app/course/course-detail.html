@@ -1,0 +1,25 @@
+
+    
+    <div class="banner">  
+        <div class="container">    
+            <h4 class="center">{{ course.title }} for ${{course.price}}</h4>
+        </div>
+    </div>
+<div class="container">  
+     <p class="lead">{{ course.description }}</p>
+</div>
+<div class="container" id="instructor-anchor">
+   
+   
+    <div class="row" *ngFor="let instructor of instructors">
+        <hr>
+        <div class="col-md-12">
+            <h4 class="">Instructor Details</h4>
+            <h4>{{instructor.firstName}}</h4>
+            <p class="lead">{{ instructor.bio }}</p>
+        </div>
+        <button type="submit" class="btn btn-primary pull-xs-right">Enroll in Course for ${{course.price}}</button>
+    </div>
+</div>
+
+ 

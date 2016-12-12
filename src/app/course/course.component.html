@@ -1,0 +1,19 @@
+
+<div>
+    <div class="banner" *showAuthed="false">
+        <div class="container">
+            <h1 class="logo-font">Offered Courses</h1>      
+             
+        </div>
+    </div>
+
+    <div class="container">
+        <div *ngFor="let course of courses" >  
+            <a [routerLink]="['/courses', course.id]" class="preview-link">
+                <h1>{{ course.title }} </h1>
+                <p>{{ course.description }}</p>
+                <span>Read more...</span>               
+            </a>                   
+        </div>        
+    </div>   
+</div>
