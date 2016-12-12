@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl } from '@angular/forms';
-import {Course, Instructor, CourseService} from '../shared';
+import {Course, CourseService} from '../shared';
 
 
 @Component({

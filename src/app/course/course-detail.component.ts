@@ -1,12 +1,12 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, Params } from '@angular/router';
+import { ActivatedRoute } from '@angular/router';
 import {Course, Instructor, CourseService, CartService} from '../shared';
 
 @Component({
     selector: 'course-detail-page',
     templateUrl: 'course-detail.html'
 })
-export class CourseDetailComponent implements OnInit{
+export class CourseDetailComponent implements OnInit {
     id: number;
 course: Course;
 instructors: Instructor[];

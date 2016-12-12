@@ -110,7 +110,7 @@ import {Course, Instructor, CourseService} from '../shared';
     templateUrl: 'course.component.html',
     styleUrls: ['course.component.css']
 })
-export class CourseComponent implements OnInit{
+export class CourseComponent implements OnInit {
     @Input()
     course: Course;
     courses: Course[];

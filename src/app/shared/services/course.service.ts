@@ -1,4 +1,4 @@
-import { EventEmitter, Injectable } from '@angular/core';
+import { Injectable } from '@angular/core';
 import { Http, URLSearchParams } from '@angular/http';
 import { Observable } from 'rxjs/Observable';
 import 'rxjs/add/operator/map';
@@ -12,9 +12,9 @@ export interface CourseSearchParams {
 
 const COURSES: Course[] = [{
         id: 0,
-        title: 'A Great Course',
+        title: 'Angular 2 Fundamentals',
         price: 75.00,
-        description: 'This course is a step-by-step curriculum introducing you to Angular 2 by rebuilding Google Keep. ' + 
+        description: 'This course is a step-by-step curriculum introducing you to Angular 2 by rebuilding Google Keep. ' +
         'While most tutorials and courses just cover individual framework features and concepts, they are often devoid of ' +
         'practical application or context of how to build a real application. We wanted to build a course for you that was ' +
         'built the way we like to learn, but actually writing code. You\'ll learn the fundamentals by building each step of the ' +
@@ -25,11 +25,12 @@ const COURSES: Course[] = [{
     },
     {
         id: 1,
-        title: 'A Super Course',
+        title: 'Modern Javascript',
         price: 65.00,
-        description: 'This is a course description. Lorem ipsum dolor sit amet, consectetur adipisicing elit. ' +
-        'Quisquam error, quod ratione possimus ipsam accusamus necessitatibus, obcaecati culpa tempora doloribus ' +
-        'id illo ad fugit, odit odio velit eius incidunt dignissimos.',
+        description: 'Building web applications with cutting edge technology often requires a foundation of modern ' +
+        'JavaScript concepts in order to be highly productive working in the latest frameworks and libraries as quickly as possible.' +
+        'In this course, we\'ll cover everything you need to know to know to get from vanilla JS basics to a ' +
+        'ES2015, ES5, ESnext, Node.js, NPM, RxJS, and Webpack.',
         categories: ['typescript']
     },
     {
@@ -66,7 +67,7 @@ const COURSES: Course[] = [{
         courseId: 0,
         firstName: 'John',
         lastName: 'Gruber',
-        bio: 'John\'s goal is to make everything easy. He has built curriculum and taught it to hundreds of engineers around the world. '+
+        bio: 'John\'s goal is to make everything easy. He has built curriculum and taught it to hundreds of engineers around the world. ' +
         'Before that he was a engineer at Udacity and Hack Reactor. He\'s a regular speaker at most Angular conferences and tries his ' +
         'best to entertain as well and educate. Sometimes he stays up for days hacking on projects, not sure how.'
     },
@@ -75,9 +76,8 @@ const COURSES: Course[] = [{
         courseId: 1,
         firstName: 'Liz',
         lastName: 'England',
-        bio: 'This is an instructor\'s bio. Lorem ipsum dolor sit amet, consectetur adipisicing elit. ' +
-        'Repellendus cumque corporis, consequuntur, reprehenderit, labore officiis reiciendis similique aliquid ' +
-        'dolorum quos praesentium! Reiciendis doloremque nihil inventore officia natus vitae unde, quibusdam.'
+        bio: 'Liz has been a huge influence in the Angular community since day one. As part of Angular team, ' +
+        'She has also made many contributions to the frameworks. Authoring libraries and writing books, his experience is vast.'
     },
     {
         id: 2,
@@ -167,7 +167,7 @@ export class CourseService {
 }
 
     getAllCategories(): string[] {
-        return ['Angular', 'React', 'TypeScript', 'JavaScript', 'Node']
+        return ['Angular', 'React', 'TypeScript', 'JavaScript', 'Node'];
     }
 }
 
