@@ -1,24 +1,9 @@
 # ![Angular 2 Example App](logo.png)
 
-> ### Angular 2 codebase containing real world examples (CRUD, auth, advanced patterns, etc)
+> ### Angular 2 codebase (CRUD, auth, advanced patterns, etc)
 
-### [Demo](https://angular2.realworld.io)&nbsp;&nbsp;&nbsp;&nbsp;[RealWorld](https://github.com/gothinkster/realworld)
+This codebase was created to demonstrate a fully fledged application built with Angular 2 that interacts with an actual backend server including CRUD operations, authentication, routing, pagination, and more. I've gone to great lengths to adhere to the [Angular 2 Styleguide](https://angular.io/styleguide) & best practices.
 
-This codebase was created to demonstrate a fully fledged application built with Angular 2 that interacts with an actual backend server including CRUD operations, authentication, routing, pagination, and more. We've gone to great lengths to adhere to the [Angular 2 Styleguide](https://angular.io/styleguide) & best practices.
-
-Additionally, there is an Angular 1.5 version of this codebase that you can [fork](https://github.com/gothinkster/angularjs-realworld-example-app) and/or [learn how to recreate](https://thinkster.io/angularjs-es6-tutorial).
-
-**This codebase is now feature complete and the RFC is open.** Your input is greatly appreciated; please submit bug fixes via pull requests & feedback via issues.
-
-# How it works
-
-We're currently working on some docs for the codebase (explaining where functionality is located, how it works, etc) but the codebase should be straightforward to follow as is. We also have a **[live workshop we're holding on October 22nd](https://thinkster.io/announcements/angular-2-workshop)** where we'll break the codebase down, explain how everything works, and do a Q&A session.
-
-Additionally, an upcoming step-by-step tutorial is being written for [Thinkster.io](https://thinkster.io/) that will cover recreating the codebase from scatch (watch this repo to stay updated!)
-
-### Making requests to the backend API
-
-For convenience, we have a live API server running at https://conduit.productionready.io/api for the application to make requests against. You can view [the API spec here](https://github.com/gothinkster/realworld/tree/master/api) which contains all routes & responses for the server. The source code for the backend server (available for Node, Rails and Django) can be found in the [main RealWorld repo](https://github.com/gothinkster/realworld).
 
 # Getting started
 
@@ -32,7 +17,7 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 
 ## Functionality overview
 
-The example application is a social blogging site (i.e. a Medium.com clone) called "Conduit". It uses a custom API for all requests, including authentication. You can view a live demo over at https://angular2.realworld.io
+The example application is a social Learning site called "Learning Spaces". It uses a custom API for all requests, including authentication. You can view a live demo over at https://learningspaces.mybluemix.net/
 
 **General functionality:**
 
