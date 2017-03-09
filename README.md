@@ -1,4 +1,4 @@
-# ![Angular 2 Example App](logo.png)
+# ![Angular 2 Example App]
 
 > ### Angular 2 codebase (CRUD, auth, advanced patterns, etc)
 
@@ -17,7 +17,7 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 
 ## Functionality overview
 
-The example application is a social Learning site called "Learning Spaces". It uses a custom API for all requests, including authentication. You can view a live demo over at https://learningspaces.mybluemix.net/
+The example application is a social Learning site called "Learning Spaces". It uses a custom API for all requests, including authentication. You can view a live demo over at http://learningspaces.com.s3-website-us-west-2.amazonaws.com/#/
 
 **General functionality:**
 
