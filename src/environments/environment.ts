@@ -5,6 +5,6 @@
 
 export const environment = {
   production: false,
-//  api_url: 'http://localhost:3000/api'
-    api_url: 'https://learningspacenode.mybluemix.net/api'
+    api_url: 'http://localhost:3000/api'
+    // api_url: 'https://learningspace.herokuapp.com/api'
 };
